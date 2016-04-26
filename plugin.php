@@ -1,6 +1,5 @@
 <?php
-/**
- * WordPress Widget Boilerplate
+/* WordPress Widget Boilerplate
  *
  * The WordPress Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
  *
@@ -30,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+class Astro_Widget extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -165,7 +164,8 @@ class Widget_Name extends WP_Widget {
 		$instance = $old_instance;
 
 		// TODO: Here is where you update your widget's old values with the new, incoming values
-
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		return $instance;
 
 	} // end widget
@@ -260,4 +260,4 @@ class Widget_Name extends WP_Widget {
 } // end class
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
-add_action( 'widgets_init', create_function( '', 'register_widget("Widget_Name");' ) );
+add_action( 'widgets_init', create_function( '', 'register_widget("Astro_Widget");' ) );
