@@ -5,7 +5,7 @@
     $collection_type = !empty($instance['collection_type']) ? $instance['collection_type'] : 'latest';
     $post_count = !empty($instance['post_count']) ? $instance['post_count'] : '5';
     $is_open_tab = $instance['is_open_tab'] ? true : false;
-    $show_featured_image = $instance['is_open_tab'] ? true : false;
+    $show_featured_image = $instance['show_featured_image'] ? true : false;
 ?>
 <p>
     <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> 

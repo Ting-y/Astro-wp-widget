@@ -166,6 +166,11 @@ class Astro_Widget extends WP_Widget {
 		// TODO: Here is where you update your widget's old values with the new, incoming values
         $instance = array();
         $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        $instance['site_url'] = ( ! empty( $new_instance['site_url'] ) ) ? strip_tags( $new_instance['site_url'] ) : '';
+        $instance['collection_type'] = ( !empty($new_instance['collection_type'])) ? strip_tags($new_instance['collection_type']) : '';
+        $instance['post_count'] = (! empty($new_instance['post_count'])) ? strip_tags($new_instance['post_count'] ): '';
+        $instance['is_open_tab'] = (! empty($new_instance['is_open_tab'])) ? strip_tags($new_instance['is_open_tab']): '';
+        $instance['show_featured_image'] = (! empty($new_instance['show_featured_image'])) ? strip_tags($new_instance['show_featured_image']): '';
 		return $instance;
 
 	} // end widget
