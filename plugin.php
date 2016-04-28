@@ -1,26 +1,24 @@
 <?php
-/* WordPress Widget Boilerplate
- *
- * The WordPress Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
+/* 
  *
  * @package   Astro
  * @author    Ting Yang <email@example.com>
  * @license   GPL-2.0+
  * @link      http://example.com
- * @copyright 2016 Ting Yang 
+ * @copyright 2016 Ting Yang and Hector Jarquin
  *
  * @wordpress-plugin
- * Plugin Name:       Astro-widget
- * Plugin URI:        https://github.com/Ting-y/Astro-wp-widget.git 
- * Description:       Plugin to portable your content 
- * Version:           1.0.0
- * Author:            Ting Yang 
+ * Plugin Name:       Astro Widget
+ * Plugin URI:        https://github.com/Ting-y/astro-wp-widget.git 
+ * Description:       Portable your content from the web 
+ * Version:           0.0.1
+ * Author:            Ting Yang and Hector Jarquin
  * Author URI:        https://github.com/Ting-y
  * Text Domain:       Astro-widget
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /lang
- * GitHub Plugin URI: https://github.com/Ting-y/Astro-wp-widget.git
+ * GitHub Plugin URI: https://github.com/Ting-y/astro-wp-widget.git
  */
  
  // Prevent direct file access
