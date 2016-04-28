@@ -2,7 +2,7 @@
 /* 
  *
  * @package   Astro
- * @author    Ting Yang <email@example.com>
+ * @author    Ting Yang and Hector Jarquin <email@example.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2016 Ting Yang and Hector Jarquin
