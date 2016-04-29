@@ -9,11 +9,11 @@
 ?>
 <p>
     <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> 
-    <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+    <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>"/>
 </p>
 <p>
     <label for="<?php echo $this->get_field_id('site_url'); ?>"><?php _e('Site URL:'); ?></label> 
-    <input class="widefat" id="<?php echo $this->get_field_id('site_url'); ?>" name="<?php echo $this->get_field_name('site_url'); ?>" type="text" value="<?php echo $site_url; ?>">
+    <input class="widefat" id="<?php echo $this->get_field_id('site_url'); ?>" name="<?php echo $this->get_field_name('site_url'); ?>" type="text" value="<?php echo $site_url; ?>" onblur="loadCategories(this, '<?php echo $this->get_field_id('collection_type');?>')">
 </p>
 <p>
     <label for="<?php echo $this->get_field_id('collection_type'); ?>"><?php _e('Collection:'); ?></label> 
@@ -30,6 +30,6 @@
     <input class="checkbox" type="checkbox" <?php checked( $instance[ 'is_open_tab' ], 'on' ); ?> id="<?php echo $this->get_field_id( 'is_open_tab' ); ?>" name="<?php echo $this->get_field_name( 'is_open_tab' ); ?>" /> 
 </p>
 <p>
-    <label for="<?php echo $this->get_field_id( 'show_featured_image' ); ?>">show featured image</label>
+<label for="<?php echo $this->get_field_id( 'show_featured_image' ); ?>">show featured image</label>
     <input class="checkbox" type="checkbox" <?php checked( $instance[ 'show_featured_image' ], 'on' ); ?> id="<?php echo $this->get_field_id( 'show_featured_image' ); ?>" name="<?php echo $this->get_field_name( 'show_featured_image' ); ?>" /> 
 </p>

@@ -13,9 +13,16 @@
         echo $before_title . $title . $after_title;
     }
     echo $after_widget;
+    $data_parameters = "";
+    if ($collection_type == 'latest') {
+        $data_parameters =  'number=' . $post_count;
+    }
+    else {
+        $data_parameters = 'number=' . $post_count . '&category=' . $collection_type;
+    }
 ?>
    <div data-api-host=<?php echo $site_url; ?>>
-        <div data-api-endpoint="posts" data-api-parameters="number=<?php echo $post_count; ?>" data-api-template="repeat">
+        <div data-api-endpoint="posts" data-api-parameters="<?php echo $data_parameters; ?>" data-api-template="repeat">
             <div>
                 <a data-api-property="URL" data-app-anchor><h1 data-api-property="title"></h1></a>
             </div>
